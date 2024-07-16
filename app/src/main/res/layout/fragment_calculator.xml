@@ -263,6 +263,13 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent">
 
+                <View
+                    android:id="@+id/male_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="@color/very_soft_blue"/>
+
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
@@ -307,6 +314,13 @@
                 app:layout_constraintEnd_toEndOf="@+id/male_card"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/constraintLayout2">
+
+                <View
+                    android:id="@+id/female_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:background="@color/very_soft_blue"/>
 
                 <ImageView
                     android:layout_width="60dp"
