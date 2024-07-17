@@ -20,4 +20,8 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="calculate_bmi">Calculate BMI</string>
+    <string name="save_the_results">Save the results</string>
+    <string name="body_mass_index">Body Mass Index</string>
+    <string name="bmi_results">BMI Results</string>
+    <string name="_22">22</string>
 </resources>
