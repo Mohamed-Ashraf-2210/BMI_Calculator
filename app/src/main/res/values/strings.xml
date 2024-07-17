@@ -24,4 +24,6 @@
     <string name="body_mass_index">Body Mass Index</string>
     <string name="bmi_results">BMI Results</string>
     <string name="_22">22</string>
+    <string name="underweight_bmi_male">Underweight: BMI less than 18.5 \nNormal weight: BMI 18.5 to 24.9 \nOverweight: BMI 25 to 29.9 \nObesity: 30 to 40</string>
+    <string name="underweight_bmi_female">Underweight: BMI less than 19.0 \nNormal weight: BMI 19.0 to 24.9 \nOverweight: BMI 25 to 29.9 \nObesity: 30 to 40</string>
 </resources>

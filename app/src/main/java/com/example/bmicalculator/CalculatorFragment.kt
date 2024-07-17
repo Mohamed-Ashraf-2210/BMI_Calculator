@@ -12,6 +12,7 @@ import com.example.bmicalculator.databinding.FragmentCalculatorBinding
 class CalculatorFragment : Fragment() {
 
     private var binding: FragmentCalculatorBinding? = null
+    var gender = "male"
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -52,17 +53,32 @@ class CalculatorFragment : Fragment() {
             maleCard.setOnClickListener {
                 maleSelect.visibility = View.VISIBLE
                 femaleSelect.visibility = View.GONE
+                gender = "male"
             }
 
             femaleCard.setOnClickListener {
                 maleSelect.visibility = View.GONE
                 femaleSelect.visibility = View.VISIBLE
+                gender = "female"
             }
 
             calculateBmiBtn.setOnClickListener {
-                parentFragmentManager.beginTransaction()
-                    .replace(R.id.main, ResultFragment())
-                    .commit()
+                binding?.apply {
+                    val heightCM = heightNumber.text.toString()
+                    val weightKG = weightNumber.text.toString()
+
+                    val fragmentB = ResultFragment()
+                    val bundle = Bundle()
+                    bundle.putString("heightCM", heightCM)
+                    bundle.putString("weightKG", weightKG)
+                    bundle.putString("gender", gender)
+
+                    fragmentB.arguments = bundle
+                    parentFragmentManager.beginTransaction()
+                        .replace(R.id.main, fragmentB)
+                        .commit()
+                }
+
             }
         }
     }
