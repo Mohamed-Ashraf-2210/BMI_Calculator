@@ -4,7 +4,7 @@
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/light_blue</item>
         <item name="colorPrimaryVariant">@color/light_blue</item>
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/light_blue</item>
     </style>
 
     <style name="Theme.BMICalculator" parent="Base.Theme.BMICalculator" />
